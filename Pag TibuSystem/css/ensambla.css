@@ -1,0 +1,1009 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'open sans';
+  }
+
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  /* Header */
+
+  header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, hsla(143, 72%, 32%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(143, 70%, 36%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+  }
+
+  nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: font-weight 0.3s, background-color 0.3s;
+  }
+
+  nav>a:hover {
+    color: hsl(143, 72%, 32%);
+    font-weight: bold;
+    background-color: #eee;
+  }
+
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+
+  .menu-list li a:hover {
+    color: #ffcc00;
+  }
+
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .content-foo {
+    text-align: center;
+  }
+
+  .content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .content-foo p {
+    color: #ccc;
+  }
+
+  .content-foo a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  .titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+  }
+
+  .formulario {
+    text-align: center;
+    padding: 20px; /* Añade un espacio alrededor del formulario */
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+
+.formulario-izquierda {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Establece un ancho máximo */
+    margin-bottom: 20px; /* Espacio entre el formulario y el borde inferior */
+}
+
+/* Estilos para hacer que los campos de entrada ocupen todo el ancho */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+}
+
+/* Estilos adicionales para hacer que el textarea sea más alto en dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    textarea {
+        height: 100px; /* Ajusta según sea necesario */
+    }
+
+    nav {
+      text-align: center;
+      padding: 30px 0 0 0;
+    }
+
+    nav>a {
+      margin-right: 5px;
+    }
+
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .menu-list li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .menu-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .textos-header h1 {
+      font-size: 35px;
+    }
+
+    .textos-header h2 {
+      font-size: 20px;
+    }
+
+    /* Footer */
+    .contenedor-footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    .content-foo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-foo h4 {
+      border: none;
+    }
+
+    .content-foo p {
+      color: #ccc;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .content-foo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content-foo a:hover {
+      text-decoration: none;
+    }
+
+    .titulo-final {
+      font-size: 20px;
+    }
+
+
+  .producto-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .producto-ind {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #c5b8b8;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #642a73;
+  }
+
+  .producto-ind p {
+    color: #eee;
+    font-size: medium;
+    font-style: italic;
+    padding: 10px;
+  }
+
+  .producto-ind img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .producto-ind h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .producto-cont a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s;
+    padding-top: 5px;
+  }
+
+  .producto-cont a:hover {
+    color: #bc4e9c;
+    font-size: 30px;
+  }
+ }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'open sans';
+  }
+
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  /* Header */
+
+  header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, hsla(143, 72%, 32%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(143, 70%, 36%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+  }
+
+  nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: font-weight 0.3s, background-color 0.3s;
+  }
+
+  nav>a:hover {
+    color: hsl(143, 72%, 32%);
+    font-weight: bold;
+    background-color: #eee;
+  }
+
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+
+  .menu-list li a:hover {
+    color: #ffcc00;
+  }
+
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .content-foo {
+    text-align: center;
+  }
+
+  .content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .content-foo p {
+    color: #ccc;
+  }
+
+  .content-foo a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  .titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+  }
+
+  .formulario {
+    text-align: center;
+    padding: 20px; /* Añade un espacio alrededor del formulario */
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+
+.formulario-izquierda {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Establece un ancho máximo */
+    margin-bottom: 20px; /* Espacio entre el formulario y el borde inferior */
+}
+
+/* Estilos para hacer que los campos de entrada ocupen todo el ancho */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+}
+
+/* Estilos adicionales para hacer que el textarea sea más alto en dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    textarea {
+        height: 100px; /* Ajusta según sea necesario */
+    }
+
+    nav {
+      text-align: center;
+      padding: 30px 0 0 0;
+    }
+
+    nav>a {
+      margin-right: 5px;
+    }
+
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .menu-list li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .menu-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .textos-header h1 {
+      font-size: 35px;
+    }
+
+    .textos-header h2 {
+      font-size: 20px;
+    }
+
+    /* Footer */
+    .contenedor-footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    .content-foo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-foo h4 {
+      border: none;
+    }
+
+    .content-foo p {
+      color: #ccc;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .content-foo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content-foo a:hover {
+      text-decoration: none;
+    }
+
+    .titulo-final {
+      font-size: 20px;
+    }
+
+
+  .producto-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .producto-ind {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #c5b8b8;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #642a73;
+  }
+
+  .producto-ind p {
+    color: #eee;
+    font-size: medium;
+    font-style: italic;
+    padding: 10px;
+  }
+
+  .producto-ind img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .producto-ind h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .producto-cont a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s;
+    padding-top: 5px;
+  }
+
+  .producto-cont a:hover {
+    color: #bc4e9c;
+    font-size: 30px;
+  }
+ }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'open sans';
+  }
+
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  /* Header */
+
+  header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, hsla(143, 72%, 32%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(143, 70%, 36%, 0.459), hsla(174, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+  }
+
+  nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: font-weight 0.3s, background-color 0.3s;
+  }
+
+  nav>a:hover {
+    color: hsl(143, 72%, 32%);
+    font-weight: bold;
+    background-color: #eee;
+  }
+
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+
+  .menu-list li a:hover {
+    color: #ffcc00;
+  }
+
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .content-foo {
+    text-align: center;
+  }
+
+  .content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .content-foo p {
+    color: #ccc;
+  }
+
+  .content-foo a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  .titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+  }
+
+  .formulario {
+    text-align: center;
+    padding: 20px; /* Añade un espacio alrededor del formulario */
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+
+.formulario-izquierda {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Establece un ancho máximo */
+    margin-bottom: 20px; /* Espacio entre el formulario y el borde inferior */
+}
+
+/* Estilos para hacer que los campos de entrada ocupen todo el ancho */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+}
+
+/* Estilos adicionales para hacer que el textarea sea más alto en dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    textarea {
+        height: 100px; /* Ajusta según sea necesario */
+    }
+
+    nav {
+      text-align: center;
+      padding: 30px 0 0 0;
+    }
+
+    nav>a {
+      margin-right: 5px;
+    }
+
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .menu-list li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .menu-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .textos-header h1 {
+      font-size: 35px;
+    }
+
+    .textos-header h2 {
+      font-size: 20px;
+    }
+
+    /* Footer */
+    .contenedor-footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    .content-foo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-foo h4 {
+      border: none;
+    }
+
+    .content-foo p {
+      color: #ccc;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+    }
+
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .content-foo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content-foo a:hover {
+      text-decoration: none;
+    }
+
+    .titulo-final {
+      font-size: 20px;
+    }
+
+
+  .producto-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .producto-ind {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #c5b8b8;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #642a73;
+  }
+
+  .producto-ind p {
+    color: #eee;
+    font-size: medium;
+    font-style: italic;
+    padding: 10px;
+  }
+
+  .producto-ind img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .producto-ind h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .producto-cont a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s;
+    padding-top: 5px;
+  }
+
+  .producto-cont a:hover {
+    color: #bc4e9c;
+    font-size: 30px;
+  }
+ }

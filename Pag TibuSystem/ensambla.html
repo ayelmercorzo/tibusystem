@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Producto - Ensamblalo</title>
+    <link rel="stylesheet" href="/css/ensambla.css">
+</head>
+
+<body>
+    <header>
+        <header>
+            <button class="menu-btn">&#9776; Menú</button>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#Acerca_de">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#politicas">Politicas</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <section class="textos-header">
+                <h1>TibuSystem</h1>
+                <h2>Mantenimiento y Asesorias</h2>
+            </section>
+            <div class="wave" style="height: 150px; overflow: hidden">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff"></path>
+                </svg>
+            </div>
+        </header>
+    </header>
+    <main>
+        <section id="producto-ensamblalo" class="producto">
+            <div class="contenedor">
+                <h2 class="titulo">¡Personaliza tu PC a tu medida!</h2>
+                <div class="contenido-producto">
+                    <img src="img/ENSAMBLAJE.JPG" alt="Imagen del producto" />
+                    <p>
+                        Es hora de enviarnos tus especificaciones de acuerdo a lo que tenemos..
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h1>Formulario para Ensamblar PC</h1>
+            <div class="formulario-container">
+                <form action="/submit" method="post" class="formulario-izquierda">
+                    
+                        Información Personal:
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="telefono">Número de teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono">
+                    
+                        <label for="uso">Uso principal del PC:</label><br>
+
+                        <input type="text" id="uso" name="uso" required><br>
+                        <label for="preferencia">Preferencia de marca para los componentes:</label><br>
+                        <input type="text" id="preferencia" name="preferencia">
+                    
+
+                    
+                        <legend>Presupuesto:</legend>
+                        <label for="presupuesto">Presupuesto total para el PC:</label><br>
+                        <input type="number" id="presupuesto" name="presupuesto" required><br>
+                    
+                        <legend>Extras:</legend>
+                    
+                        <label for="comentarios">Comentarios adicionales:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                    
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="Contacto">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Celular</h4>
+                <p>321-451-1398</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>TibuSystem@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Localizacion</h4>
+                <p>Cra. 7<br>
+                    Tibú, Norte de Santander</p>
+            </div>
+            <div class="content-foo">
+                <h4>Redes</h4>
+                <p>
+                    <a href="https://www.facebook.com/profile.php?id=61551665362695&mibextid=ZbWKwL">Facebook</a> |
+                    <a href="https://www.instagram.com/tibusystem10/?igsh=MWRybTVucWltMDZmaw%3D%3D">Instagram</a>
+                </p>
+            </div>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246.53732253716092!2d-72.73469070367241!3d8.634614829639036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6729bf5aae6661%3A0x62deb36541efe15e!2sTibuSystem!5e0!3m2!1ses!2sco!4v1709096480719!5m2!1ses!2sco"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 class="titulo-final">&copy; Desarrollada Por TibuSystem</h2>
+    </footer>
+</body>
+
+</html>
