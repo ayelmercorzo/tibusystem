@@ -18,6 +18,11 @@ _Este repositorio contiene el código para una página web de servicios de mante
 ### Capturas
 
 ![image](https://github.com/user-attachments/assets/fe8196a2-37c2-4686-b1e3-9e62998ebad7)
+#### Enlace de la pagina funcionando
+http://tibusystem.000.pe/
+#### En este enlace puedes tener una vista previa de la pagina
+- (https://github.com/user-attachments/assets/d3a7ba09-5f4d-42aa-b2a0-bfcf8e0b6c34)
+
 
 ###
 
@@ -30,6 +35,10 @@ _Este repositorio contiene el código para una página web de servicios de mante
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
 </div>
+
+
+
+
 
 ###
 
