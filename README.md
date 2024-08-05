@@ -1,6 +1,4 @@
-<h1 aling="center"></h1>
-
-<p aling="left"></p>
+<h1 aling="center">TibuSystem</h1>
 
 ## Porque fue diseñada?
 _Este repositorio contiene el código para una página web de servicios de mantenimiento. En ella se puede encontrar información sobre la localidad, incluyendo detalles y la localidad del negocio._
